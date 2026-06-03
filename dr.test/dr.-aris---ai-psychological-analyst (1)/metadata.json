@@ -1,0 +1,8 @@
+{
+  "name": "Dr. Aris - AI Psychological Analyst",
+  "description": "A compassionate AI psychological doctor that analyzes your well-being through real-time voice and video conversation using Gemini Live API and face-api.js.",
+  "requestFramePermissions": [
+    "microphone",
+    "camera"
+  ]
+}

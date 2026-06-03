@@ -1,0 +1,62 @@
+/* Performance optimizations for animations */
+
+/* Disable animations on devices with prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* GPU acceleration for smooth animations */
+.motion-safe {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.glass-effect {
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+
+/* Optimize scrolling performance */
+.scroll-list {
+  will-change: scroll-position;
+  -webkit-overflow-scrolling: touch;
+  contain: layout style paint;
+}
+
+/* Image optimization */
+img {
+  content-visibility: auto;
+}
+
+/* Optimize gradient rendering */
+.gradient-aurora,
+.gradient-aurora-text,
+.gradient-blue-purple {
+  will-change: contents;
+}
+
+/* Reduce bundle size - lazy load animations */
+.lazy-animate {
+  animation: none;
+}
+
+.lazy-animate.loaded {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

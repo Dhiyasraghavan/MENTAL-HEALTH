@@ -1,0 +1,55 @@
+{
+  "name": "Mental Health Hub - SDG 3.4 Aligned",
+  "short_name": "Mental Health Hub",
+  "description": "AI-driven emotional support for students, IT professionals, and senior citizens. Anonymous, secure, and available 24/7.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["health", "education", "social"],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Student Portal",
+      "short_name": "Students",
+      "description": "Access student mental health portal",
+      "url": "/student",
+      "icons": [
+        { "src": "/icon-192.svg", "sizes": "192x192", "type": "image/svg+xml" }
+      ]
+    },
+    {
+      "name": "IT Employee Portal",
+      "short_name": "IT",
+      "description": "Access IT employee wellness portal",
+      "url": "/it-employee",
+      "icons": [
+        { "src": "/icon-192.svg", "sizes": "192x192", "type": "image/svg+xml" }
+      ]
+    },
+    {
+      "name": "Elder Care Portal",
+      "short_name": "Elder",
+      "description": "Access elder care monitoring portal",
+      "url": "/elder",
+      "icons": [
+        { "src": "/icon-192.svg", "sizes": "192x192", "type": "image/svg+xml" }
+      ]
+    }
+  ]
+}
